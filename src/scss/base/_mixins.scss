@@ -1,0 +1,14 @@
+@mixin res($breakpoint) {
+	@media #{inspect(map-get($breakpoints, $breakpoint))} {
+		@content;
+	}
+}
+
+//fix ro min() max() css functions
+@function max($numbers...){
+	@return m#{a}x(#{$numbers})
+}
+
+@function min($numbers...){
+	@return m#{i}n(#{$numbers})
+}

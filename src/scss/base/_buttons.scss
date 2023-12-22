@@ -175,28 +175,6 @@
       padding: 9px 16px;
     }
   }
-
-  &--more {
-    background: none;
-    color: $seafoam;
-    position: relative;
-    z-index: 2;
-    border: 2px solid $seafoam;
-
-    &:hover {
-      background: $seafoam;
-      color: #ffffff;
-    }
-  }
-}
-
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-359deg);
-  }
 }
 
 button::-moz-focus-inner {

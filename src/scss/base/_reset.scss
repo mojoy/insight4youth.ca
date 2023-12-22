@@ -1,4 +1,6 @@
-*, *:after, *:before {
+*,
+*:after,
+*:before {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -6,11 +8,32 @@
 	-webkit-text-size-adjust: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, div, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+div,
+span {
 	max-height: 5000em;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
 	display: block;
 	position: relative;
 }
@@ -31,40 +54,51 @@ select:-webkit-autofill:focus {
 	-webkit-box-shadow: 0 0 0 1000px #FFF inset;
 }
 
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
 	margin: 0;
 	text-transform: none;
 
-	&:before{
+	&:before {
 		display: none;
 	}
 }
 
-.h2{
+.h2 {
 	border-bottom: none;
 	color: inherit;
 }
 
-ul{
+ul {
 	line-height: inherit;
 	list-style: none;
 
-	li{
+	li {
 		background: none;
 	}
 }
 
-ol{
+ol {
 	overflow: initial;
 	line-height: inherit;
 	padding-left: 16px;
 	padding-bottom: 9px;
 
-	li{
+	li {
 		position: initial;
 		padding-bottom: 11px;
 
-		&:before{
+		&:before {
 			content: "";
 			color: initial;
 			float: none;
@@ -74,18 +108,21 @@ ol{
 	}
 }
 
-button[type="button"], button[type="submit"], .button{
+button[type="button"],
+button[type="submit"],
+.button {
 	min-width: initial;
 }
 
-a{
+a {
 	font-weight: inherit;
 }
 
-strong,b{
+strong,
+b {
 	font-weight: bold;
 }
 
-template{
+template {
 	display: none;
 }
