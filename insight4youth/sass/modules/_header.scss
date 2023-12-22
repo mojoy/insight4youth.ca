@@ -1,0 +1,26 @@
+.header {
+   display: flex;
+   padding: 16px 0 8px;
+   background: #fff;
+   position: sticky;
+   top: 0;
+   z-index: 5;
+
+   &.fixed {
+      box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+   }
+
+   .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1437px;
+   }
+}
+
+.header__logo {
+   width: 100%;
+   display: block;
+   width: auto;
+   max-width: 210px;
+}

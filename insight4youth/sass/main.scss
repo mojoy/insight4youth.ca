@@ -1,0 +1,383 @@
+/*
+Theme Name: insight4youth;
+Author: Alexander Shamarin & Vitaly Kruglov
+Description: marine;
+Version: 1.0
+*/
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/placeholders";
+
+@import "vendors/swiper";
+
+@import "base/reset";
+
+@import "base/typography";
+@import "base/grid";
+@import "base/forms";
+@import "base/buttons";
+@import "base/modals";
+
+//@import "modules/sliders";
+@import "modules/header";
+@import "modules/main-nav";
+@import "modules/footer";
+
+.promo {
+   padding: 0;
+   font-size: 22px;
+   line-height: 1.6;
+   color: #848484;
+
+   @include res(m) {
+      font-size: 20px;
+   }
+
+   @include res(xs) {
+      font-size: 18px;
+   }
+
+   &__title {
+      color: #000;
+      margin: 0 0 25px;
+
+      @include res(m) {
+         margin: 0 0 15px;
+      }
+
+      span {
+         color: #848484;
+      }
+   }
+
+   &__img-box {
+      margin: 0 0 0 -165px;
+
+      @include res(m) {
+         margin: 0;
+      }
+
+      @include res(xs) {
+      }
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      @include res(m) {
+         padding-top: 15px;
+         padding-bottom: 15px;
+      }
+   }
+
+   &__title-sub {
+      font-size: 22px;
+      padding: 8px 0 0;
+      font-family: "Manrope", sans-serif;
+      letter-spacing: 0.01em;
+   }
+
+   p {
+      margin: 0 0 25px;
+
+      @include res(m) {
+         margin: 0 0 18px;
+      }
+   }
+}
+
+.row-more {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   font-weight: 500;
+   padding: 5px 0 0;
+}
+
+.more {
+   &__link {
+      color: #3f3b3b;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      line-height: 1.4;
+      font-size: 24px;
+      text-decoration: underline;
+
+      @include res(m) {
+         font-size: 21px;
+      }
+
+      @include res(xs) {
+         font-size: 17px;
+      }
+   }
+
+   &__icon {
+      display: flex;
+      margin: 0.1em 0 0 14px;
+
+      @include res(m) {
+         width: 45px;
+      }
+
+      @include res(xs) {
+         width: 35px;
+      }
+   }
+}
+
+.main {
+   padding: 0 0 44px;
+   position: relative;
+   z-index: 1;
+
+   @include res(m) {
+      padding: 0 0 30px;
+   }
+}
+
+.section-content.row [class*="grid"] {
+   @include res(m) {
+      padding-bottom: 25px;
+   }
+}
+
+.section {
+   padding: 80px 0;
+   background: #f5f5f5;
+
+   @include res(m) {
+      padding: 50px 0 30px;
+   }
+
+   @include res(xs) {
+      padding: 30px 0 10px;
+   }
+
+   &__title {
+      color: #000;
+      margin: -10px 0 14px;
+      letter-spacing: 0.015em;
+
+      @include res(m) {
+         margin-top: 0;
+      }
+
+      span {
+         color: #848484;
+      }
+   }
+
+   &__title-sub {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 300;
+   }
+
+   &__img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      width: 100%;
+
+      & + * {
+         margin-top: 30px;
+      }
+   }
+
+   p {
+      margin: 0 0 20px;
+
+      @include res(m) {
+         margin: 0 0 15px;
+      }
+   }
+}
+
+.section--bottom-null {
+   padding-bottom: 0;
+}
+
+@include res(m) {
+   .section--1 {
+
+      .section-content > [class*="grid"] {
+         &:first-child {
+            order: 2;
+         }
+
+         &:last-child {
+            order: 1;
+         }
+      }
+   }
+}
+
+.section--white {
+   background: #fff;
+}
+
+.keep-inner {
+   max-width: 580px;
+   margin: 0 auto;
+}
+.keep {
+   padding: 48px 50px 15px;
+   background: #fff;
+   text-align: center;
+   color: #3f3b3b;
+   font-size: 16px;
+   font-style: normal;
+   letter-spacing: 0.32px;
+   border-radius: 4px;
+
+   @include res(m) {
+      padding: 20px;
+      margin-left: -10px;
+      margin-right: -10px;
+   }
+
+   &__img {
+      margin: 0 auto 15px;
+      display: block;
+   }
+
+   &__icon {
+      margin: 0 auto 15px;
+      display: block;
+      width: auto;
+   }
+
+   &__title {
+      color: #3f3b3b;
+      text-align: center;
+      margin: 0 0 16px;
+   }
+
+   &__sub-title {
+      color: #848484;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.55;
+      letter-spacing: 0.36px;
+      margin: 0 0 24px;
+   }
+
+   p {
+      margin-bottom: 23px;
+   }
+}
+
+.box-mark {
+   border-radius: 4px;
+   background: #fff;
+   padding: 40px;
+   margin: 0 0 25px;
+
+   @include res(m) {
+      margin: 0 0 20px;
+      padding: 30px;
+   }
+
+   @include res(xs) {
+      margin: 0 0 15px;
+      padding: 20px;
+   }
+
+   p {
+      margin: 0 0 18px;
+   }
+}
+
+.help-block {
+   overflow: hidden;
+   font-size: 16px;
+   padding: 0 40px;
+   color: #3f3b3b;
+   line-height: 1.5;
+
+   @include res(m) {
+      padding: 0;
+   }
+}
+
+.s-form-message {
+   .container {
+      padding: 80px 0;
+      background: #fff;
+      border-radius: 4px;
+      background: #fff;
+
+      @include res(m) {
+         padding: 50px 0;
+      }
+
+      @include res(xs) {
+         padding: 30px 0;
+      }
+   }
+}
+
+.form-message {
+   margin: 0 auto;
+   max-width: 540px;
+   padding: 0 15px;
+
+   &__title {
+      margin: 0 0 20px;
+      color: #3f3b3b;
+      text-align: center;
+   }
+}
+
+.s-posts {
+   padding: 70px 0 41px;
+
+   @include res(m) {
+      padding: 50px 0 30px;
+   }
+
+   @include res(xs) {
+      padding: 30px 0 20px;
+   }
+}
+
+.posts {
+   &__item {
+      padding: 0 0 16px;
+   }
+
+   &__title {
+      text-align: center;
+      margin: 0 0 32px;
+      color: #3f3b3b;
+   }
+
+   &__img {
+      border-radius: 4px;
+      background: #d8d8d8;
+   }
+
+   &__text {
+      text-align: center;
+      padding: 24px 20px;
+      font-weight: 500;
+
+      @include res(m) {
+         padding: 20px 15px;
+      }
+
+      @include res(xs) {
+         padding: 18px 12px;
+      }
+   }
+}
+
