@@ -1,0 +1,52 @@
+.keep-inner {
+  max-width: 580px;
+  margin: 0 auto;
+}
+.keep {
+  padding: 48px 50px 15px;
+  background: #fff;
+  text-align: center;
+  color: #3f3b3b;
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: 0.32px;
+  border-radius: 4px;
+
+  @include res(m) {
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  &__img {
+    margin: 0 auto 15px;
+    display: block;
+  }
+
+  &__icon {
+    margin: 0 auto 15px;
+    display: block;
+    width: auto;
+  }
+
+  &__title {
+    color: #3f3b3b;
+    text-align: center;
+    margin: 0 0 16px;
+  }
+
+  &__sub-title {
+    color: #848484;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: 0.36px;
+    margin: 0 0 24px;
+  }
+
+  p {
+    margin-bottom: 23px;
+  }
+}

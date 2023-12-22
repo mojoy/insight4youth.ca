@@ -1,0 +1,28 @@
+.s-form-message {
+  .container {
+    padding: 80px 0;
+    background: #fff;
+    border-radius: 4px;
+    background: #fff;
+
+    @include res(m) {
+      padding: 50px 0;
+    }
+
+    @include res(xs) {
+      padding: 30px 0;
+    }
+  }
+}
+
+.form-message {
+  margin: 0 auto;
+  max-width: 540px;
+  padding: 0 15px;
+
+  &__title {
+    margin: 0 0 20px;
+    color: #3f3b3b;
+    text-align: center;
+  }
+}

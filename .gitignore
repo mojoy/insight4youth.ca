@@ -1,0 +1,10 @@
+/.vscode
+/.idea
+/node_modules/
+/mytest.rar
+/mytest.zip
+/dist
+/gulp
+/design
+/theme
+version.json

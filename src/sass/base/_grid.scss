@@ -3,6 +3,16 @@
 	max-width: 100%;
 }
 
+.main {
+	padding: 0 0 44px;
+	position: relative;
+	z-index: 1;
+ 
+	@include res(m) {
+	   padding: 0 0 30px;
+	}
+ }
+ 
 .hidden {
 	display: none !important;
 }
