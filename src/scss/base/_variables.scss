@@ -2,14 +2,16 @@ $breakpoints: (
 	//'xxl': (max-width: 1680px),
 	//'xl': (max-width: 1400px),
 	//'xll': (max-width: 1280px),
-	//'l': (max-width: 1024px),
+	'l': (max-width: 1024px),
 	'm': (max-width: 768px),
-	's': (max-width: 680px),
+	//'s': (max-width: 680px),
 	'xs': (max-width: 480px),
 	'xxs': (max-width: 375px),
 );
 
 $font: 'Manrope', sans-serif;
+$fontH1: 'Marcellus', serif;
+$fontForm: 'Quicksand', sans-serif;
 
 $container_width: 1170px;
 
@@ -19,4 +21,4 @@ $shadow-block: 0 2px 15px 0 transparentize(#a6bfcf,0.5);
 $shadow-block-big: 0 3px 35px 0 transparentize(#a6bfcf,0.3);
 
 $gray-text: #ccc;
-$focus-color: #111;
+$focus-color: #3f3b3b;

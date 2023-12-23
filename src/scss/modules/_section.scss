@@ -1,6 +1,6 @@
 .section-content.row [class*="grid"] {
 	@include res(m) {
-		padding-bottom: 25px;
+		padding-bottom: 15px;
 	}
 }
 
@@ -8,21 +8,25 @@
 	padding: 80px 0;
 	background: #f5f5f5;
 
-	@include res(m) {
+	@include res(l) {
 		padding: 50px 0 30px;
 	}
 
 	@include res(xs) {
-		padding: 30px 0 10px;
+		padding: 30px 0 20px;
 	}
 
 	&__title {
 		color: #000;
-		margin: -10px 0 14px;
+		margin: -8px 0 16px;
 		letter-spacing: 0.015em;
 
 		@include res(m) {
 			margin-top: 0;
+		}
+
+		& + .box-mark {
+			border-top: 7px solid #f5f5f5;
 		}
 
 		span {
@@ -32,8 +36,20 @@
 
 	&__title-sub {
 		font-size: 22px;
-		font-style: normal;
+		padding: 8px 0 0;
 		font-weight: 300;
+		letter-spacing: 0.01em;
+		font-family: $font;
+	}
+
+	&__img-box {
+		margin: 0 0 0 -165px;
+
+		@include res(m) {
+			margin: 0;
+		}
+
+		@include res(xs) {}
 	}
 
 	&__img {
@@ -44,6 +60,27 @@
 
 		&+* {
 			margin-top: 30px;
+
+			@include res(l) {
+				margin-top: 0;
+			}
+		}
+
+		@include res(l) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		@include res(m) {
+			padding-top: 15px;
+			padding-bottom: 15px;
 		}
 	}
 

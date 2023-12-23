@@ -1,7 +1,7 @@
 /*
 Theme Name: insight4youth;
 Author: Alexander Shamarin & Vitaly Kruglov
-Description: marine;
+Description: insight4youth;
 Version: 1.0
 */
 
@@ -12,6 +12,7 @@ Version: 1.0
 @import "base/grid";
 @import "base/forms";
 @import "base/buttons";
+@import "base/layout";
 
 @import "vendors/swiper";
 
@@ -19,8 +20,8 @@ Version: 1.0
 @import "modules/header";
 @import "modules/main-nav";
 @import "modules/footer";
-@import "modules/post";
+@import "modules/section";
 @import "modules/promo";
+@import "modules/post";
 @import "modules/form-message";
 @import "modules/keep";
-@import "modules/section";

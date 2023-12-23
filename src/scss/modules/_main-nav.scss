@@ -26,6 +26,10 @@
 	height: 100%;
 	display: flex;
 	align-items: center;
+
+	@include res(l) {
+		padding: 0 15px;
+	}
 }
 
 .main-nav__link {
