@@ -8,34 +8,70 @@ window.addEventListener('scroll', function() {
     }
 });
 
+var swiper;
 
-var swiper = new Swiper(".swiper-posts", {
-    slidesPerView: 3,
-    loop: true,
-    threshold: 5,
-    grabCursor: true,
-    watchOverflow: true,
-    autoHeight: true,
-    spaceBetween: 30,
+function initSwiper() {
+    const windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+    if (windowWidth < 1024) {
+        swiper = new Swiper(".swiper-posts", {
+            slidesPerView: 3,
+            loop: true,
+            threshold: 5,
+            grabCursor: true,
+            watchOverflow: true,
+            autoHeight: true,
+            spaceBetween: 30,
 
-    breakpoints: {
-        1024: {
-            spaceBetween: 30
-        },
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 15
-        },
-        250: {
-            slidesPerView: 1,
-            spaceBetween: 0
-        }
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                250: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 16
+                },
+                930: {
+                    slidesPerView: 3,
+                    spaceBetween: 24
+                },
+            }
+        });
     }
-  });
+}
 
-  
+function sliderArrow() {
+    const portfolioSlider = document.querySelectorAll('.swiper-posts');
+
+    if (portfolioSlider.length) {
+        portfolioSlider.forEach((element) => {
+
+            const twentyTwentyWrapper = element.querySelector('.posts__img');
+            const arrowWrapper = element.querySelectorAll('.slider-arrow-wrapper');
+            const arrowWrapperHeight = twentyTwentyWrapper.clientHeight;
+
+            arrowWrapper.forEach((element) => {
+                element.style.setProperty('height', arrowWrapperHeight + 'px')
+            })
+        });
+    }
+}
+
+function handleResize() {
+    sliderArrow();
+    if (swiper) {
+        swiper.destroy();
+    }
+    initSwiper();
+}
+
+initSwiper();
+sliderArrow();
+
+window.addEventListener('resize', handleResize);

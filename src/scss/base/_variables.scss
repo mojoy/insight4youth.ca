@@ -13,12 +13,21 @@ $font: 'Manrope', sans-serif;
 $fontH1: 'Marcellus', serif;
 $fontForm: 'Quicksand', sans-serif;
 
-$container_width: 1170px;
+$container_width: 1174px;
 
-$gutter: 15px;
+$gutter: 16px;
 
 $shadow-block: 0 2px 15px 0 transparentize(#a6bfcf,0.5);
 $shadow-block-big: 0 3px 35px 0 transparentize(#a6bfcf,0.3);
 
+
+$mainColor: #3f3b3b;
+$textColor: #848484;
+$h1Color: #000;
+$titleColor: $mainColor;
+
 $gray-text: #ccc;
 $focus-color: #3f3b3b;
+
+$link: $mainColor;
+$linkHover: $mainColor;

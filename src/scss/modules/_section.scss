@@ -17,9 +17,13 @@
 	}
 
 	&__title {
-		color: #000;
 		margin: -8px 0 16px;
 		letter-spacing: 0.015em;
+
+		&.h1,
+		&h1 {
+			margin-bottom: 13px;
+		}
 
 		@include res(m) {
 			margin-top: 0;
@@ -30,7 +34,7 @@
 		}
 
 		span {
-			color: #848484;
+			color: $textColor;
 		}
 	}
 
@@ -43,13 +47,17 @@
 	}
 
 	&__img-box {
-		margin: 0 0 0 -165px;
+		margin: 0 0 0 -99999px;
+		display: flex;
+		justify-content: flex-end;
 
 		@include res(m) {
 			margin: 0;
 		}
 
-		@include res(xs) {}
+		.section__img {
+			width: auto;
+		}
 	}
 
 	&__img {
@@ -68,6 +76,10 @@
 
 		@include res(l) {
 			margin-bottom: 25px;
+		}
+
+		@include res(m) {
+			margin-bottom: 20px;
 		}
 	}
 
@@ -113,4 +125,8 @@
 
 .section--white {
 	background: #fff;
+
+	&:last-child {
+		margin-bottom: 80px;
+	}
 }

@@ -7,7 +7,7 @@
 	padding: 48px 50px 15px;
 	background: #fff;
 	text-align: center;
-	color: #3f3b3b;
+	color: $mainColor;
 	font-size: 16px;
 	font-style: normal;
 	letter-spacing: 0.32px;
@@ -15,8 +15,6 @@
 
 	@include res(m) {
 		padding: 20px;
-		//margin-left: -15px;
-		//margin-right: -15px;
 	}
 
 	&__img {
@@ -31,13 +29,12 @@
 	}
 
 	&__title {
-		color: #3f3b3b;
 		text-align: center;
 		margin: 0 0 16px;
 	}
 
 	&__sub-title {
-		color: #848484;
+		color: $textColor;
 		text-align: center;
 		font-size: 18px;
 		font-style: normal;

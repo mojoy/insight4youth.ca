@@ -33,7 +33,7 @@
 }
 
 .main-nav__link {
-	color: #3f3b3b;
+	color: $mainColor;
 	text-decoration: none;
 	position: relative;
 	height: 100%;
@@ -48,7 +48,7 @@
 		left: -5px;
 		height: 6px;
 		right: -5px;
-		background: #3f3b3b;
+		background: $mainColor;
 		opacity: 0;
 		transition: all 0.3s ease-in;
 	}
