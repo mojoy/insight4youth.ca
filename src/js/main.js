@@ -75,3 +75,27 @@ initSwiper();
 sliderArrow();
 
 window.addEventListener('resize', handleResize);
+
+
+
+const btnNav = document.querySelector('.btn-nav');
+
+if (btnNav) {
+
+    btnNav.addEventListener("click", function () {
+
+        const body = document.querySelector('body');
+        const nav = document.querySelector('.main-nav-wrapper');
+
+        if (btnNav.classList.contains('btn-nav--open')) {
+            btnNav.classList.remove('btn-nav--open');
+            nav.classList.remove('open');
+            body.classList.remove('over');
+        } else {
+            btnNav.classList.add('btn-nav--open');
+            nav.classList.add('open');
+            body.classList.add('over');
+        }
+
+    });
+}

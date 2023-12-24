@@ -18,9 +18,28 @@
 	}
 }
 
+.header__logo-link {
+	
+
+	@media (max-width: 414px)  {
+		overflow: hidden;
+		width: 60px;
+	}
+}
+
 .header__logo {
 	width: 100%;
 	display: block;
 	width: auto;
 	max-width: 210px;
+	position: relative;
+	z-index: 9999;
+
+	@include res(m) {
+		max-width: 176px;
+	}
+
+	@include res(xs) {
+		max-width: 155px;
+	}
 }

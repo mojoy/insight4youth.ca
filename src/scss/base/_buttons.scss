@@ -14,7 +14,6 @@
 
 .row-btn__text {
 	padding: 0 24px;
-
 	color: $textColor;
 	font-size: 18px;
 	font-style: normal;
@@ -88,7 +87,7 @@
 		}
 
 		path {
-			color: $link;
+			fill: $link;
 		}
 	}
 }
@@ -114,6 +113,7 @@
 	line-height: 1.3;
 	letter-spacing: 0.32px;
 	text-transform: none;
+	flex-shrink: 0;
 
 	@include res(m) {
 		font-size: 15px;

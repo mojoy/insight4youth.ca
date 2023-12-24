@@ -1,1 +1,49 @@
-!function(){"use strict";window.addEventListener("scroll",(function(){const e=document.querySelector(".header");window.scrollY>0?e.classList.add("fixed"):e.classList.remove("fixed")})),new Swiper(".swiper-posts",{slidesPerView:3,loop:!0,threshold:5,grabCursor:!0,watchOverflow:!0,autoHeight:!0,spaceBetween:30,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{1024:{spaceBetween:30},640:{slidesPerView:2,spaceBetween:15},250:{slidesPerView:1,spaceBetween:0}}})}();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/js/main.js":
+/*!************************!*\
+  !*** ./src/js/main.js ***!
+  \************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\nwindow.addEventListener('scroll', function() {\r\n    const header = document.querySelector('.header');\r\n\r\n    if (window.scrollY > 0) {\r\n        header.classList.add('fixed');\r\n    } else {\r\n        header.classList.remove('fixed');\r\n    }\r\n});\r\n\r\nvar swiper;\r\n\r\nfunction initSwiper() {\r\n    const windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;\r\n\r\n    if (windowWidth < 1024) {\r\n        swiper = new Swiper(\".swiper-posts\", {\r\n            slidesPerView: 3,\r\n            loop: true,\r\n            threshold: 5,\r\n            grabCursor: true,\r\n            watchOverflow: true,\r\n            autoHeight: true,\r\n            spaceBetween: 30,\r\n\r\n            navigation: {\r\n                nextEl: \".swiper-button-next\",\r\n                prevEl: \".swiper-button-prev\",\r\n            },\r\n\r\n            breakpoints: {\r\n                250: {\r\n                    slidesPerView: 1,\r\n                    spaceBetween: 0\r\n                },\r\n                640: {\r\n                    slidesPerView: 2,\r\n                    spaceBetween: 16\r\n                },\r\n                930: {\r\n                    slidesPerView: 3,\r\n                    spaceBetween: 24\r\n                },\r\n            }\r\n        });\r\n    }\r\n}\r\n\r\nfunction sliderArrow() {\r\n    const portfolioSlider = document.querySelectorAll('.swiper-posts');\r\n\r\n    if (portfolioSlider.length) {\r\n        portfolioSlider.forEach((element) => {\r\n\r\n            const twentyTwentyWrapper = element.querySelector('.posts__img');\r\n            const arrowWrapper = element.querySelectorAll('.slider-arrow-wrapper');\r\n            const arrowWrapperHeight = twentyTwentyWrapper.clientHeight;\r\n\r\n            arrowWrapper.forEach((element) => {\r\n                element.style.setProperty('height', arrowWrapperHeight + 'px')\r\n            })\r\n        });\r\n    }\r\n}\r\n\r\nfunction handleResize() {\r\n    sliderArrow();\r\n    if (swiper) {\r\n        swiper.destroy();\r\n    }\r\n    initSwiper();\r\n}\r\n\r\ninitSwiper();\r\nsliderArrow();\r\n\r\nwindow.addEventListener('resize', handleResize);\r\n\r\n\r\n\r\nconst btnNav = document.querySelector('.btn-nav');\r\n\r\nif (btnNav) {\r\n\r\n    btnNav.addEventListener(\"click\", function () {\r\n\r\n        const body = document.querySelector('body');\r\n        const nav = document.querySelector('.main-nav-wrapper');\r\n\r\n        if (btnNav.classList.contains('btn-nav--open')) {\r\n            btnNav.classList.remove('btn-nav--open');\r\n            nav.classList.remove('open');\r\n            body.classList.remove('over');\r\n        } else {\r\n            btnNav.classList.add('btn-nav--open');\r\n            nav.classList.add('open');\r\n            body.classList.add('over');\r\n        }\r\n\r\n    });\r\n}\n\n//# sourceURL=webpack://mytest/./src/js/main.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/js/main.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	
+/******/ })()
+;

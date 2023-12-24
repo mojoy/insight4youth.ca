@@ -37,6 +37,11 @@
 	padding-right: $gutter * 2;
 	z-index: 10;
 
+	@include res(l) {
+		padding-left: $gutter * 1.5;
+		padding-right: $gutter * 1.5;
+	}
+
 	@include res(m) {
 		padding-left: $gutter;
 		padding-right: $gutter;

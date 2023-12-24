@@ -30,7 +30,7 @@
 		}
 
 		& + .box-mark {
-			border-top: 7px solid #f5f5f5;
+			border-top: 7px solid $mainBgColor;
 		}
 
 		span {
@@ -128,5 +128,13 @@
 
 	&:last-child {
 		margin-bottom: 80px;
+
+		@include res(l) {
+			margin-bottom: 30px;
+		}
+	
+		@include res(xs) {
+			margin-bottom: 20px;
+		}
 	}
 }
