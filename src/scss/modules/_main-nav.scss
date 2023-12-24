@@ -79,6 +79,7 @@
 	margin: 0 0 0 24px;
 	z-index: 9999;
 	display: none;
+	padding: 0 !important;
 
 	@include res(xs) {
 		width: 38px;

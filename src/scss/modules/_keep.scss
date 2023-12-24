@@ -8,7 +8,7 @@
 	background: #fff;
 	text-align: center;
 	color: $mainColor;
-	font-size: 16px;
+	font-size: clamp(0.938rem, 0.909rem + 0.14vw, 1rem);
 	font-style: normal;
 	letter-spacing: 0.32px;
 	border-radius: 4px;
@@ -36,7 +36,7 @@
 	&__sub-title {
 		color: $textColor;
 		text-align: center;
-		font-size: 18px;
+		font-size: clamp(1rem, 0.943rem + 0.28vw, 1.125rem);
 		font-style: normal;
 		font-weight: 500;
 		line-height: 1.55;

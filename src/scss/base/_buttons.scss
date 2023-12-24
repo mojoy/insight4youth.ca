@@ -15,18 +15,18 @@
 .row-btn__text {
 	padding: 0 24px;
 	color: $textColor;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.943rem + 0.28vw, 1.125rem);
 	font-style: normal;
 	font-weight: 500;
 
 	@include res(m) {
 		padding: 0 20px;
-		font-size: 17px;
+		//font-size: 17px;
 	}
 
 	@include res(xs) {
 		padding: 0 13px;
-		font-size: 16px;
+		//font-size: 16px;
 	}
 
 	@include res(xxs) {
@@ -53,10 +53,10 @@
 		display: flex;
 		align-items: center;
 		line-height: 1.4;
-		font-size: 24px;
+		font-size: clamp(1.125rem, 0.955rem + 0.85vw, 1.5rem);
 		letter-spacing: 0.02em;
 		text-decoration: underline;
-
+/*
 		@include res(l) {
 			font-size: 22px;
 		}
@@ -67,7 +67,7 @@
 
 		@include res(xs) {
 			font-size: 18px;
-		}
+		}*/
 	}
 
 	&__icon {

@@ -1,6 +1,6 @@
 body {
 	font-family: $font;
-	font-size: 18px;
+	font-size: clamp(0.938rem, 0.852rem + 0.43vw, 1.125rem);
 	font-weight: 400;
 	font-style: normal;
 	line-height: 1.55;
@@ -8,10 +8,6 @@ body {
 	background: $mainBgColor;
 	letter-spacing: 0.02em;
 	min-width: 320px;
-
-	@include res(l) {
-		font-size: 16px;
-	}
 
 	&.over {
 		overflow: hidden;
@@ -43,14 +39,14 @@ h6,
 h1,
 .h1 {
 	color: $h1Color;
-	font-size: 40px;
+	font-size: clamp(1.813rem, 1.5rem + 1.56vw, 2.5rem);
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
 	letter-spacing: 0.02em;
 	font-family: $fontH1;
 	margin: 0 0 13px;
-
+/*
 	@include res(l) {
 		font-size: 36px;
 	}
@@ -61,59 +57,59 @@ h1,
 
 	@include res(xs) {
 		font-size: 28px;
-	}
+	}*/
 }
 
 h2,
 .h2 {
 	color: $titleColor;
 	font-family: $font;
-	font-size: 32px;
+	font-size: clamp(1.5rem, 1.273rem + 1.14vw, 2rem);
 	font-style: normal;
 	font-weight: 800;
 	line-height: 1.25;
 	letter-spacing: 0;
-
+/*
 	@include res(m) {
 		font-size: 28px;
 	}
 
 	@include res(xs) {
 		font-size: 24px;
-	}
+	}*/
 }
 
 h3,
 .h3 {
-	font-size: 28px;
+	font-size: clamp(1.375rem, 1.205rem + 0.85vw, 1.75rem);
 	line-height: 1.2;
-
+/*
 	@include res(m) {
 		font-size: 24px;
 	}
 
 	@include res(xs) {
 		font-size: 22px;
-	}
+	}*/
 }
 
 h4,
 .h4 {
-	font-size: 20px;
+	font-size: clamp(1rem, 0.886rem + 0.57vw, 1.25rem);
 	line-height: 1.3;
-
+/*
 	@include res(m) {
 		font-size: 18px;
 	}
 
 	@include res(xs) {
 		font-size: 16px;
-	}
+	}*/
 }
 
 h5,
 .h5 {
-	font-size: 18px;
+	font-size: clamp(1rem, 0.943rem + 0.28vw, 1.125rem);
 	line-height: 1.3;
 }
 
@@ -214,7 +210,7 @@ img {
 
 .help-block {
 	overflow: hidden;
-	font-size: 16px;
+	font-size: clamp(0.938rem, 0.909rem + 0.14vw, 1rem);
 	padding: 0 40px;
 	color: $mainColor;
 	line-height: 1.5;
