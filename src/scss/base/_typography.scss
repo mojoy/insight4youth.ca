@@ -1,6 +1,6 @@
 body {
 	font-family: $font;
-	font-size: clamp(0.938rem, 0.852rem + 0.43vw, 1.125rem);
+	font-size: $mainFontSize;
 	font-weight: 400;
 	font-style: normal;
 	line-height: 1.55;
@@ -162,7 +162,7 @@ a[href^="tel:"] {
 }
 
 p {
-	margin-bottom: 15px;
+	margin: 0 0 calc(10px + 1vw);
 }
 
 img {

@@ -18,6 +18,10 @@
 	&__title {
 		text-align: center;
 		margin: 0 0 32px;
+
+		@include res(m) {
+			margin: 0 0 calc(10px + 1.5vw);
+		}
 	}
 
 	&__img {
