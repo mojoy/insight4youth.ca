@@ -55,8 +55,8 @@
 	margin-right: -$gutter;
 
 	@include res(xs) {
-		margin-left: -$gutter / 2;
-		margin-right: -$gutter / 2;
+		margin-left: -$gutter/2;
+		margin-right: -$gutter/2;
 	}
 
 	[class*="grid"] {
@@ -64,8 +64,8 @@
 		padding-right: $gutter;
 
 		@include res(xs) {
-			padding-left: $gutter / 2;
-			padding-right: $gutter / 2;
+			padding-left: $gutter/2;
+			padding-right: $gutter/2;
 		}
 	}
 

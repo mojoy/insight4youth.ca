@@ -9,16 +9,15 @@
 	<meta name="keywords" content="Anna Polotskaia">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Marcellus&family=Quicksand&display=swap&_v=8a2b1cb4fcaf81efeb1cd9d77f9bd7c2" rel="stylesheet">
-	<link href="./css/main.min.css?_v=8a2b1cb4fcaf81efeb1cd9d77f9bd7c2" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Marcellus&family=Quicksand&family=Roboto+Slab:wght@700&display=swap&_v=5983c355045c2e7cb63761eaee1d088b" rel="stylesheet"> 	<link href="./css/main.min.css?_v=5983c355045c2e7cb63761eaee1d088b" rel="stylesheet">
 </head>
-<body>
+<body class="inner">
 	<div class="wrapper">
 		<header class="header" role="banner">
 			<div class="container">
-				<a href="./" title="Anna Polotskaia" class="header__logo-link">
-					<picture><source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.jpg" class="header__logo" width="210" height="32" loading="auto" alt="Anna Polotskaia"></picture>
-				</a>
+            <a href="./" title="Anna Polotskaia" class="header__logo-link">
+               <img src="./img/logo.svg" class="header__logo" loading="auto" alt="Anna Polotskaia" width="183" height="56">
+            </a>
 				<nav class="main-nav-wrapper">
 					<ul class="main-nav__list">
 						<li class="main-nav__item main-nav__item--active"><a href="./about.html" class="main-nav__link">About</a></li>
@@ -26,7 +25,11 @@
 						<li class="main-nav__item"><a href="./resources.html" class="main-nav__link">Resources</a></li>
 					</ul>
 				</nav>
-				<a href="./contacts.html" class="button button--contact" title="Contact Dr. Anna" role="button" aria-label="Contact Dr. Anna">Contact Dr. Anna</a>
+				<a href="./contacts.html" class="button button--big button--contact" title="Contact Dr. Anna" role="button" aria-label="Contact Dr. Anna">
+					<img class="button__icon" src="./img/icon/message-icon-ac.svg" alt="img" width="24" height="24" />
+					<img class="button__icon button__icon--active" src="./img/icon/message-icon.svg" alt="img" width="24" height="24" />
+					Contact Dr. Anna
+				 </a>
 				<span class="button btn-nav" role="button" aria-label="Open Navigation Menu"><figure></figure></span>
 			</div>
 		</header>
@@ -35,12 +38,12 @@
 				<div class="container">
 					<div class="row section-content">
 						<div class="grid-6 grid-12_m">
-							<picture><source srcset="./img/img2.webp" type="image/webp"><img class="section__img" src="./img/img2.jpg" width="540" height="520" loading="auto" alt="img"></picture>
+							<img class="section__img" src="./img/img6.webp" width="540" height="520" loading="auto" alt="img">
 						</div>
 						<div class="grid-6 grid-12_m">
 							<h1 class="h1 section__title">About Dr. Anna</h1>
-							<p>My name is Anna Polotskaia (she/her). My young clients tend to call me Dr. Anna. I am a clinical psychologist and a member of the College of Psychologists of Ontario registered with the in the areas of clinical child and school psychology. </p>
-							<p>I received a Master’s of Science in psychiatric research and a PhD in child clinical psychology at McGill University. This well-rounded clinical training provided me with an invaluable foundation in child development, brain science, clinical approaches and educational practices.</p>
+							<p>My name is Anna Polotskaia (she/her). My young clients tend to call me Dr. Anna. I am a clinical psychologist and a member of the <a href="#">College of Psychologists of Ontario</a> registered with the in the areas of clinical child and school psychology. I work with diverse population of school-age children and teens, and their families. I strive to provide safe, culturally sustaining interventions for clients across genders, cultures and </p>
+							<p>I received a Master’s of Science in psychiatric research and a PhD in child clinical psychology at McGill University. This well-rounded clinical training provided me with an invaluable  foundation in child development, brain science, clinical approaches and educational practices.</p>
 							<p>In addition to doctoral level training I have completed a number of training programs for specific therapeutic approaches, including </p>
 							<ul>
 								<li>Cognitive Behavioral Therapy (CBT),</li>
@@ -57,16 +60,16 @@
 					<div class="row section-content">
 						<div class="grid-6 grid-12_m">
 							<h2 class="h2 section__title"><span>My Approach:</span> Every Client and Every Family is Unique</h2>
-							<p>My approach to therapy is always centred on compassionate client-centred care grounded in evidence-based research. </p>
-							<p>While working in collaboration with my clients I focus on their specific strengths, goals and needs, while also considering their unique store circumstances. </p>
-							<p>With over a decade of research and clinical work in hospitals, schools and community clinics, I am passionate about providing best care to young people facing difficulties.</p>
-							<p>Psychotherapy is a form of treatment that allows young people and their families to become more aware and more skilled in coping with difficult situations and overwhelming feelings.</p>
+							<p>My approach to therapy is always centred on compassionate client-centred care grounded in evidence-based research.</p>
+							<p>While working in collaboration with my clients I focus on their specific strengths, goals and needs, while also considering their unique store circumstances. As a youth therapist, I support youth in building their skills in self-awareness and self-reflection, while providing them with a safe non-judgmental space.</p>
+							<p>With over a decade of research and clinical work in hospitals, schools and community clinics, I am passionate about providing best care to young people facing difficulties.</p>
+							<p>Psychotherapy is a form of  treatment that allows young people and their families to become more aware and more skilled in coping with difficult situations and overwhelming feelings.</p>
 							<div class="row-more">
-								<a href="#" class="more__link" title="my services">Learn more about my services <svg  class="more__icon" width="62" height="24" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M61.0607 13.0607C61.6464 12.4749 61.6464 11.5251 61.0607 10.9393L51.5147 1.3934C50.9289 0.807611 49.9792 0.807611 49.3934 1.3934C48.8076 1.97919 48.8076 2.92893 49.3934 3.51472L57.8787 12L49.3934 20.4853C48.8076 21.0711 48.8076 22.0208 49.3934 22.6066C49.9792 23.1924 50.9289 23.1924 51.5147 22.6066L61.0607 13.0607ZM0 13.5H60V10.5H0L0 13.5Z" fill="#3F3B3B"/></svg></a>
-							</div>	
+								<a href="#" class="more__link" title="my services">Learn more about my services <svg  class="more__icon" width="33" height="24" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M61.0607 13.0607C61.6464 12.4749 61.6464 11.5251 61.0607 10.9393L51.5147 1.3934C50.9289 0.807611 49.9792 0.807611 49.3934 1.3934C48.8076 1.97919 48.8076 2.92893 49.3934 3.51472L57.8787 12L49.3934 20.4853C48.8076 21.0711 48.8076 22.0208 49.3934 22.6066C49.9792 23.1924 50.9289 23.1924 51.5147 22.6066L61.0607 13.0607ZM0 13.5H60V10.5H0L0 13.5Z" fill="#3F3B3B"/></svg></a>
+							</div>
 						</div>
 						<div class="grid-6 grid-12_m">
-							<picture><source srcset="./img/img2.webp" type="image/webp"><img class="section__img" src="./img/img2.jpg" width="540" height="520" loading="lazy" alt="img"></picture>
+							<img class="section__img" src="./img/img7.webp" width="540" height="520" loading="lazy" alt="img">
 						</div>
 					</div>
 				</div>
@@ -75,14 +78,52 @@
 				<div class="container">
 					<div class="keep">
 						<div class="keep-inner">
-							<picture><source srcset="./img/icon1.webp" type="image/webp"><img class="keep__icon" src="./img/icon1.png" width="182" height="82" loading="lazy" alt="img"></picture>
+							<img class="keep__icon" src="./img/icon1.webp" width="182" height="82" loading="lazy" alt="img">
 							<h2 class="h2 keep__title">Please Keep in Mind</h2>
-							<p class="keep__sub-title">My part-time clinic offers virtual and in-person appointments. I also teach at the local university and consult at the school board.</p>
-							<p>Reach out via email or book a free 15-minute phone check to connect with Dr. Anna Polotskaia for you and your child's needs.</p>
+							<p>My part-time clinic offers virtual and in-person appointments. I also teach at the local university and consult at the school board.</p>
+							<p><strong>Reach out via email or book a free 15-minute phone check to connect with Dr. Anna Polotskaia for you and your child's needs.</strong></p>
 							<div class="row-btn row--center">
-								<a href="" class="button button--big" title="Contact Me" role="button">Contact Me</a>
+								<a href="" class="button button--big button--outline" title="Contact Me" role="button">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_197_5031)">
+										<path d="M6.99 3.8V15.44H24V3.8H6.99ZM21.08 5.23L15.49 7.98L9.9 5.23H21.08ZM22.57 14.01H8.42V6.1L14.86 9.26L15.49 9.57L16.12 9.26L22.56 6.1V14.01H22.57Z" fill="#00988F"/>
+										<path d="M21.49 22.57L16.61 18.36C16.12 18.01 15.54 17.82 14.94 17.82H2.87C2.08 17.82 1.44 17.18 1.44 16.39V2.85C1.44 2.06 2.08 1.42 2.87 1.42H20.06C20.85 1.42 21.49 2.06 21.49 2.85V3.09H22.92V2.85C22.92 1.27 21.64 0 20.05 0H2.87C1.28 0 0 1.28 0 2.85V16.4C0 17.98 1.28 19.25 2.87 19.25H14.95C15.25 19.25 15.54 19.34 15.79 19.52L20.67 23.73C20.93 23.92 21.22 24 21.5 24C22.24 24 22.94 23.41 22.94 22.57V16.14H21.51V22.57H21.49Z" fill="#00988F"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_197_5031">
+										<rect width="24" height="24" fill="white"/>
+										</clipPath>
+										</defs>
+										</svg>
+									Contact Dr. Anna
+								</a>
 								<div class="row-btn__text">or</div>
-								<a href="" class="button button--big" title="Schedule a Visit" role="button">Schedule a Visit</a>
+								<a href="" class="button button--big" title="Schedule a Visit" role="button">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_197_4994)">
+										  <path d="M10.3004 11.8143H7.38197V14.6835H10.3004V11.8143Z" fill="#F3FEFD"/>
+										  <path d="M14.5923 7.59494H11.6738V10.4641H14.5923V7.59494Z" fill="#F3FEFD"/>
+										  <path d="M11.6738 14.6835H11.794C12.4361 13.5308 13.4112 12.584 14.5923 11.9646V11.8143H11.6738V14.6835Z" fill="#F3FEFD"/>
+										  <path d="M17.3391 3.71308C17.8129 3.71308 18.1974 3.33502 18.1974 2.8692V0.843882C18.1974 0.378059 17.8129 0 17.3391 0C16.8652 0 16.4807 0.378059 16.4807 0.843882V2.8692C16.4807 3.33502 16.8652 3.71308 17.3391 3.71308Z" fill="#F3FEFD"/>
+										  <path d="M4.63519 3.71308C5.10901 3.71308 5.49356 3.33502 5.49356 2.8692V0.843882C5.49356 0.378059 5.10901 0 4.63519 0C4.16137 0 3.77682 0.378059 3.77682 0.843882V2.8692C3.77682 3.33502 4.16137 3.71308 4.63519 3.71308Z" fill="#F3FEFD"/>
+										  <path d="M3.09013 20.4219C2.23691 20.4219 1.54506 19.7418 1.54506 18.903V6.24473H20.4292V11.6793C20.9837 11.9038 21.5039 12.1975 21.9742 12.5502V5.40084C21.9742 3.74346 20.6953 2.38143 19.0558 2.21266V2.8692C19.0558 3.80084 18.2867 4.55696 17.3391 4.55696C16.3914 4.55696 15.6223 3.80084 15.6223 2.8692V2.19409H6.35193V2.8692C6.35193 3.80084 5.58283 4.55696 4.63519 4.55696C3.68755 4.55696 2.91845 3.80084 2.91845 2.8692V2.23629C1.26695 2.48101 0 3.87848 0 5.56962V18.5654C0 20.3359 1.46094 21.7722 3.2618 21.7722H12.1785C11.8833 21.3536 11.6343 20.9013 11.4403 20.4219H3.09013Z" fill="#F3FEFD"/>
+										  <path d="M18.8841 7.59494H15.9657V10.4641H18.8841V7.59494Z" fill="#F3FEFD"/>
+										  <path d="M20.6009 17.2152H18.3691V14.8523C18.3691 14.4793 18.0618 14.1772 17.6824 14.1772C17.303 14.1772 16.9957 14.4793 16.9957 14.8523V17.8903C16.9957 18.2633 17.303 18.5654 17.6824 18.5654H20.6009C20.9803 18.5654 21.2876 18.2633 21.2876 17.8903C21.2876 17.5173 20.9803 17.2152 20.6009 17.2152Z" fill="#F3FEFD"/>
+										  <path d="M6.00858 7.59494H3.09013V10.4641H6.00858V7.59494Z" fill="#F3FEFD"/>
+										  <path d="M17.8197 11.8481C14.4069 11.8481 11.6395 14.5688 11.6395 17.9241C11.6395 21.2793 14.4069 24 17.8197 24C21.2326 24 24 21.2793 24 17.9241C24 14.5688 21.2326 11.8481 17.8197 11.8481ZM17.8197 22.6498C15.1657 22.6498 13.0129 20.5333 13.0129 17.9241C13.0129 15.3148 15.1657 13.1983 17.8197 13.1983C20.4738 13.1983 22.6266 15.3148 22.6266 17.9241C22.6266 20.5333 20.4738 22.6498 17.8197 22.6498Z" fill="#F3FEFD"/>
+										  <path d="M6.00858 16.0338H3.09013V18.903H6.00858V16.0338Z" fill="#F3FEFD"/>
+										  <path d="M10.3004 7.59494H7.38197V10.4641H10.3004V7.59494Z" fill="#F3FEFD"/>
+										  <path d="M6.00858 11.8143H3.09013V14.6835H6.00858V11.8143Z" fill="#F3FEFD"/>
+										  <path d="M10.3004 16.0338H7.38197V18.903H10.3004V16.0338Z" fill="#F3FEFD"/>
+										</g>
+										<defs>
+										  <clipPath id="clip0_197_4994">
+											<rect width="24" height="24" fill="white"/>
+										  </clipPath>
+										</defs>
+									  </svg>
+									Schedule a Visit
+								</a>
 							</div>
 						</div>
 					</div>
@@ -91,11 +132,11 @@
 		</main>
 		<footer class="footer" role="contentinfo">
 			<div class="container">
-				Copyright &copy; 2023 - Dr. Anna Anna Polotskaia. All Rights Reserved.
+				Copyright &copy; 2024 - Dr. Anna Anna Polotskaia. All Rights Reserved.
 			</div>
 		</footer>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=8a2b1cb4fcaf81efeb1cd9d77f9bd7c2"></script>
-	<script src="js/main.js?_v=8a2b1cb4fcaf81efeb1cd9d77f9bd7c2" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=5983c355045c2e7cb63761eaee1d088b"></script>
+	<script src="js/main.js?_v=5983c355045c2e7cb63761eaee1d088b" type="text/javascript"></script>
 </body>
 </html>

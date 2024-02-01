@@ -4,29 +4,33 @@ $breakpoints: (
 	//'xll': (max-width: 1280px),
 	'l': (max-width: 1024px),
 	'm': (max-width: 768px),
-	//'s': (max-width: 680px),
+	's': (max-width: 680px),
 	'xs': (max-width: 480px),
 	'xxs': (max-width: 375px),
 );
 
 $font: 'Manrope', sans-serif;
-$fontH1: 'Marcellus', serif;
+$fontH1: 'Roboto Slab', serif;
 $fontForm: 'Quicksand', sans-serif;
 
-$mainFontSize: clamp(0.938rem, 0.852rem + 0.43vw, 1.125rem);
+$mainFontSize: clamp(1rem, 0.934rem + 0.25vw, 1.125rem);
 
-$container_width: 1174px;
+$container_width: 1176px;
 
 $gutter: 16px;
 
-$shadow-block: 0 2px 15px 0 transparentize(#a6bfcf,0.5);
-$shadow-block-big: 0 3px 35px 0 transparentize(#a6bfcf,0.3);
+$shadow-block: 0 2px 15px 0 transparentize(#a6bfcf, 0.5);
+$shadow-block-big: 0 3px 35px 0 transparentize(#a6bfcf, 0.3);
 
-$mainBgColor: #f5f5f5;
-$mainColor: #3f3b3b;
-$textColor: #848484;
+$navLinlColor: #4A5777;
+$mainBgColor: #F3FEFD;
+$mainColor: #00988F;
+$textColor: #4A5777;
 $h1Color: #000;
-$titleColor: $mainColor;
+$titleColor: #4A5777;
+
+$bgFooter: #4A5777;
+$colorFooter: #F9F5F1;
 
 $gray-text: #ccc;
 $focus-color: #3f3b3b;

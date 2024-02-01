@@ -1,0 +1,123 @@
+
+.s-services {
+    padding: 40px 0 15px;
+
+    @include res(s) {
+        padding: 20px 0 15px;
+     }
+}
+
+.services {
+    font-size: clamp(.875rem,.816rem + .29vw,1rem);
+    line-height: 1.5;
+    //margin-bottom: -44px;
+
+    &__item {
+        padding: 32px;
+        border-radius: 8px;
+        background: #FEFDFC;
+        height: 100%;
+
+        @include res(l) {
+           padding: 24px;
+        }
+
+        @include res(s) {
+            padding: 16px;
+         }
+
+    }
+
+    &__img {
+        margin-bottom: 24px;
+
+        @include res(s) {
+            margin-bottom: 16px;
+            height: 50px;
+         }
+    }
+
+    &__text {
+
+    }
+
+    [class*="grid"] {
+        padding-bottom: 42px;
+
+        @include res(l) {
+            padding-bottom: 30px;
+         }
+
+        @include res(s) {
+            padding-bottom: 24px;
+         }
+
+
+         @media (min-width: 1025px) {
+            &:nth-child(2) .services__item,
+            &:nth-child(4) .services__item,
+
+            &:nth-child(5) .services__item,
+            &:nth-child(7) .services__item,
+
+            &:nth-child(10) .services__item,
+            &:nth-child(12) .services__item,
+
+            &:nth-child(13) .services__item,
+            &:nth-child(15) .services__item {
+                background: #E6E6E6;
+            }
+        }
+
+        @include res(l) {
+
+            & .services__item {
+                background: #FEFDFC;
+            }
+
+            &:nth-child(2n) .services__item {
+                background: #E6E6E6;
+            }
+         }
+
+
+
+         @include res(s) {
+
+            & .services__item {
+                background: #E6E6E6;
+
+            }
+
+            &:nth-child(2) .services__item,
+            &:nth-child(3) .services__item,
+            &:nth-child(6) .services__item,
+            &:nth-child(7) .services__item,
+            &:nth-child(10) .services__item,
+            &:nth-child(11) .services__item,
+            &:nth-child(14) .services__item {
+                background: #FEFDFC;
+            }
+
+
+         }
+
+      }
+}
+
+.section-head {
+   text-align: center;
+   font-size: clamp(1.125rem, 0.993rem + 0.51vw, 1.375rem);
+   margin: 0 auto 22px;
+   max-width: 700px;
+   line-height: 1.6;
+   overflow: hidden;
+
+   @include res(m) {
+      line-height: 1.444em;
+   }
+
+   h2 {
+     margin-bottom: 8px;
+   }
+}

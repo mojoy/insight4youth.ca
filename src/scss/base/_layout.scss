@@ -1,14 +1,39 @@
 .main {
-	padding: 0 0 44px;
+	padding: 0 0 538px;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	flex-grow: 1;
+
+	@include res(l) {
+		padding: 0 0 300px;
+	}
 
 	@include res(m) {
-		padding: 0 0 30px;
+		padding: 0 0 200px;
+	}
+
+	@include res(xs) {
+		padding: 0 0 140px;
+	}
+
+	.home & {
+		padding: 0 0 46px;
+
+		@include res(m) {
+			padding: 0 0 200px;
+		}
 	}
 }
 
 .hidden {
 	display: none !important;
+}
+
+.mob {
+	display: none !important;
+
+	@include res(m) {
+		display: block !important;
+	}
 }

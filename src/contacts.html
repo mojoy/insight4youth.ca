@@ -9,25 +9,35 @@
 	<meta name="keywords" content="Anna Polotskaia">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Marcellus&family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Marcellus&family=Quicksand&family=Roboto+Slab:wght@700&display=swap&_v=2168d73cf8d86778c061da9f783da480" rel="stylesheet"> 	<link href="./css/main.min.css?_v=2168d73cf8d86778c061da9f783da480" rel="stylesheet">
 	<link href="./css/main.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner">
 	<div class="wrapper">
 		<header class="header" role="banner">
 			<div class="container">
-				<a href="./" title="Anna Polotskaia" class="header__logo-link">
-					<img src="./img/logo.jpg" class="header__logo" width="210" height="32" loading="auto" alt="Anna Polotskaia">
-				</a>
+            <a href="./" title="Anna Polotskaia" class="header__logo-link">
+               <img src="./img/logo.svg" class="header__logo" loading="auto" alt="Anna Polotskaia" width="183" height="56">
+            </a>
 				<nav class="main-nav-wrapper">
 					<ul class="main-nav__list">
-						<li class="main-nav__item main-nav__item--active"><a href="./about.html" class="main-nav__link">About</a></li>
+						<li class="main-nav__item"><a href="./about.html" class="main-nav__link">About</a></li>
 						<li class="main-nav__item"><a href="./services.html" class="main-nav__link">Services</a></li>
 						<li class="main-nav__item"><a href="./resources.html" class="main-nav__link">Resources</a></li>
 					</ul>
 				</nav>
-				<a href="./contacts.html" class="button button--contact" title="Contact Dr. Anna" role="button" aria-label="Contact Dr. Anna">Contact Dr. Anna</a>
-				<span class="button btn-nav" role="button" aria-label="Open Navigation Menu"><figure></figure></span>
+				<a href="./contacts.html" class="button button--big button--contact web" title="Contact Dr. Anna" role="button" aria-label="Contact Dr. Anna">
+					<img class="button__icon" src="./img/icon/message-icon-ac.svg" alt="img" width="24" height="24" />
+					<img class="button__icon button__icon--active" src="./img/icon/message-icon.svg" alt="img" width="24" height="24" />
+					Contact Dr. Anna
+				 </a>
+				 <span class="button btn-nav" role="button" aria-label="Open Navigation Menu">
+               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="8" width="32" height="4" rx="2" fill="#00988F"/>
+                  <rect x="4" y="28" width="32" height="4" rx="2" fill="#00988F"/>
+                  <rect x="12" y="18" width="24" height="4" rx="2" fill="#00988F"/>
+               </svg>
+             </span>
 			</div>
 		</header>
 		<main class="main">
@@ -35,7 +45,7 @@
 				<div class="container">
 					<div class="row section-content">
 						<div class="grid-6 grid-12_m">
-							<img class="section__img" src="./img/img5.jpg" width="540" height="622" loading="auto" alt="img">
+							<img class="section__img" src="./img/img-map.webp" width="540" height="890" loading="auto" alt="img">
 						</div>
 						<div class="grid-6 grid-12_m">
 							<h1 class="h1 section__title">
@@ -43,16 +53,21 @@
 								<div class="section__title-sub">Clinical &amp; School Psychologist</div>
 							</h1>
 							<div class="box-mark">
-								In-person appointments are scheduled on an as-needed basis in Waterloo, Ontario.
+								<p>In-person appointments  are on Mondays and Thursdays  in Uptown Waterloo, Ontario. </p>
+								<p>Virtual and phone appointments are available across the week days - please check the online calendar for availability.</p>
+								<p>
+									<a href="">25 Dupont St E Unit 1<br> Waterloo, ON  N2J 2G8</a><br><br>
+									<a href="tel:226-499-1776">226-499-1776</a>
+								</p>
 							</div>
 							<div class="box-mark">
-								In-person sessions (virtual) are available over secure video for all residents of Ontario, Canada.
+								<p>Online (virtual) sessions are available over secure video  platform for all residents of Ontario, Canada.</p>
+								<p>You will be redirected to to <a href="">OWL portal</a> for booking. </p>
 							</div>
-							<p>Please feel free to reach out by email or book a 15-minute free phone intake using the following link &amp; phone:</p>
+							<p>Please feel free to reach out by email if you have any questions or or book a 15-minute free phone “ check &amp; connect” meeting to see if my services is a good fit for your family. </p>
 							<ul>
-								<li><strong><a href="mailto:email@email.com">email@email.com</a></strong></li>
-								<li><strong><a href="tel:88001234567">8-800-123-4567</a></strong></li>
-								<li><strong><a href="">Book an appointment online</a></strong></li>
+								<li><strong><a href="mailto:insight4youth@proton.me">insight4youth@proton.me</a></strong></li>
+								<li><strong><a href="">Book an Appointment Online</a></strong></li>
 							</ul>
 						</div>
 					</div>
@@ -86,7 +101,7 @@
 		</main>
 		<footer class="footer" role="contentinfo">
 			<div class="container">
-				Copyright &copy; 2023 - Dr. Anna Anna Polotskaia. All Rights Reserved.
+				Copyright &copy; 2024 - Dr. Anna Anna Polotskaia. All Rights Reserved.
 			</div>
 		</footer>
 	</div>

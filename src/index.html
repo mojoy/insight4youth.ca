@@ -9,25 +9,29 @@
 	<meta name="keywords" content="Anna Polotskaia">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Marcellus&family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Marcellus&family=Quicksand&family=Roboto+Slab:wght@300;400;500;700&display=swap&_v=2168d73cf8d86778c061da9f783da480" rel="stylesheet"> 	<link href="./css/main.min.css?_v=2168d73cf8d86778c061da9f783da480" rel="stylesheet">
 	<link href="./css/main.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="home">
 	<div class="wrapper">
 		<header class="header" role="banner">
 			<div class="container">
-				<a href="./" title="Anna Polotskaia" class="header__logo-link">
-					<img src="./img/logo.jpg" class="header__logo" width="210" height="32" loading="auto" alt="Anna Polotskaia">
-				</a>
+            <a href="./" title="Anna Polotskaia" class="header__logo-link">
+               <img src="./img/logo.svg" class="header__logo" loading="auto" alt="Anna Polotskaia" width="183" height="56">
+            </a>
 				<nav class="main-nav-wrapper">
 					<ul class="main-nav__list">
-						<li class="main-nav__item main-nav__item--active"><a href="./about.html" class="main-nav__link">About</a></li>
+						<li class="main-nav__item"><a href="./about.html" class="main-nav__link">About</a></li>
 						<li class="main-nav__item"><a href="./services.html" class="main-nav__link">Services</a></li>
 						<li class="main-nav__item"><a href="./resources.html" class="main-nav__link">Resources</a></li>
 					</ul>
 				</nav>
-				<a href="./contacts.html" class="button button--contact" title="Contact Dr. Anna" role="button" aria-label="Contact Dr. Anna">Contact Dr. Anna</a>
-				<span class="button btn-nav" role="button" aria-label="Open Navigation Menu"><figure></figure></span>
+				<a href="./contacts.html" class="button button--big button--contact web" title="Contact Dr. Anna" role="button" aria-label="Contact Dr. Anna">
+					<img class="button__icon" src="./img/icon/message-icon-ac.svg" alt="img" width="24" height="24" />
+					<img class="button__icon button__icon--active" src="./img/icon/message-icon.svg" alt="img" width="24" height="24" />
+					Contact Dr. Anna
+				 </a>
+				 <span class="button btn-nav" role="button" aria-label="Open Navigation Menu"><figure></figure></span>
 			</div>
 		</header>
 		<main class="main">
@@ -35,8 +39,8 @@
 				<div class="container">
 					<div class="row section-content">
 						<div class="grid-7 grid-12_m">
-							<div class="section__img-box" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-								<img class="section__img" src="img/img3.jpg" width="800" height="600" loading="auto" alt="img" itemprop="image">
+							<div class="section__img-box" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+								<img class="section__img mob" src="./img/img11.webp" width="768" height="601" loading="auto" alt="img">
 							</div>
 						</div>
 						<div class="grid-5 grid-12_m section__content">
@@ -48,8 +52,8 @@
 								<p>Supporting youth and their families in finding their ways to thrive, overcome challenges and fostering resilience</p>
 							</div>
 							<div class="row-more">
-								<a href="#" class="more__link" title="my services">Learn more about my services <svg  class="more__icon" width="62" height="24" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M61.0607 13.0607C61.6464 12.4749 61.6464 11.5251 61.0607 10.9393L51.5147 1.3934C50.9289 0.807611 49.9792 0.807611 49.3934 1.3934C48.8076 1.97919 48.8076 2.92893 49.3934 3.51472L57.8787 12L49.3934 20.4853C48.8076 21.0711 48.8076 22.0208 49.3934 22.6066C49.9792 23.1924 50.9289 23.1924 51.5147 22.6066L61.0607 13.0607ZM0 13.5H60V10.5H0L0 13.5Z" fill="#3F3B3B"/></svg></a>
-							</div>	
+								<a href="#" class="more__link" title="my services">Learn more about me <svg  class="more__icon" width="32" height="20" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M61.0607 13.0607C61.6464 12.4749 61.6464 11.5251 61.0607 10.9393L51.5147 1.3934C50.9289 0.807611 49.9792 0.807611 49.3934 1.3934C48.8076 1.97919 48.8076 2.92893 49.3934 3.51472L57.8787 12L49.3934 20.4853C48.8076 21.0711 48.8076 22.0208 49.3934 22.6066C49.9792 23.1924 50.9289 23.1924 51.5147 22.6066L61.0607 13.0607ZM0 13.5H60V10.5H0L0 13.5Z" fill="#3F3B3B"/></svg></a>
+							</div>
                             <meta itemprop="email" content="email@email.com">
 							<meta itemprop="telephone" content="8-800-123-4567">
 							<meta itemprop="knows" content="My part-time clinic offers virtual and in-person appointments. I also teach at the local university and consult at the school board.">
@@ -66,57 +70,64 @@
 							<p>Depending on the needs of your family, frequency of the sessions and duration of treatment can vary. Sometimes just a couple of sessions can make a notable difference, providing youth with skills to take a different look at the situation or to apply strategies we explore and practice in session. </p>
 							<p>One way to see this process is an analogy with arranging stones in a new balanced pattern or finding a path in a new landscape.</p>
 						</div>
-						<div class="grid-6 grid-12_m">
-							<img class="section__img" src="./img/img2.jpg" width="540" height="520" loading="lazy" alt="img">
-						</div>
 					</div>
 				</div>
 			</section>
 			<section class="section s-posts">
 				<div class="container posts">
 					<h2 class="h2 section__title posts__title">
-						Individual. Flexible. <br>	
+						Individual. Flexible. <br>
 						Always Private and Secure.
 					</h2>
 					<div class="posts swiper swiper-posts">
 						<div class="swiper-wrapper swiper-wrapper--row">
 							<div class="swiper-slide">
 								<div class="posts__item">
-									<img class="posts__img" src="./img/img4.jpg" width="350" height="240" loading="lazy" alt="img">
+									<div class="posts-img-wrapper">
+										<img class="posts__img" src="./img/img-individual-1.webp" width="560" height="376" loading="lazy" alt="img">
+									</div>
 									<div class="posts__text">
-										Individual psychotherapy and parent consultations are available by virtual and in-person sessions.
+										Individual psychotherapy and parent consultations are available by virtual and in-person sessions in Waterloo.
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="posts__item">
-									<img class="posts__img" src="./img/img4.jpg" width="350" height="240" loading="lazy" alt="img">
+									<div class="posts-img-wrapper">
+										<img class="posts__img" src="./img/img-individual-2.webp" width="560" height="376" loading="lazy" alt="img">
+									</div>
 									<div class="posts__text">
-										In-person sessions and over secure video to all residents of Ontario, Canada.
+										Before your first session, a 15-minute check-and-connect phone call will allow us to clarify the process.
 									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="posts__item">
-									<img class="posts__img" src="./img/img4.jpg" width="350" height="240" loading="lazy" alt="img">
+									<div class="posts-img-wrapper">
+										<img class="posts__img" src="./img/img-individual-3.webp" width="560" height="376" loading="lazy" alt="img">
+									</div>
 									<div class="posts__text">
-										I offer in-person and virtual sessions that are typically 50 minutes long. 
+										I offer in-person and virtual sessions that are typically 50 minutes long.
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="slider-arrow-wrapper slider-arrow-wrapper--prev"><div class="swiper-button-prev"></div></div>	
+						<div class="slider-arrow-wrapper slider-arrow-wrapper--prev"><div class="swiper-button-prev"></div></div>
 						<div class="slider-arrow-wrapper slider-arrow-wrapper--next"><div class="swiper-button-next"></div></div>
 					</div>
-					<div class="row-btn row--center">
-						<a href="" class="button button--big" role="button">Schedule a Visit</a>
+					<div class="row-btn row-btn--lines row--center">
+						<a href="" class="button button--big" role="button">
+							<img class="button__icon" src="./img/icon/calendar-icon.svg" alt="img" width="24" height="24" />
+							<img class="button__icon button__icon--active" src="./img/icon/calendar-icon-ac.svg" alt="img" width="24" height="24" />
+							Schedule a Visit
+						</a>
 					</div>
-				</div>	
+				</div>
 			</section>
 		</main>
 		<footer class="footer" role="contentinfo">
 			<div class="container">
-				Copyright &copy; 2023 - Dr. Anna Anna Polotskaia. All Rights Reserved.
+				Copyright &copy; 2024 - Dr. Anna Anna Polotskaia. All Rights Reserved.
 			</div>
 		</footer>
 	</div>

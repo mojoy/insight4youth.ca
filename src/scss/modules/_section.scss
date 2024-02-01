@@ -5,20 +5,19 @@
 }
 
 .section {
-	padding: 80px 0;
-	background: #f5f5f5;
+	padding: 60px 0;
 
 	@include res(l) {
-		padding: 50px 0 30px;
+		padding: 30px 0;
 	}
 
 	@include res(xs) {
-		padding: 30px 0 20px;
+		padding: 20px 0;
 	}
 
 	&__title {
-		margin: -8px 0 16px;
-		letter-spacing: 0.015em;
+		margin: -11px 0 16px;
+		letter-spacing: .02em;
 
 		&.h1,
 		&h1 {
@@ -29,8 +28,8 @@
 			margin: 0 0 calc(10px + 1vw);
 		}
 
-		& + .box-mark {
-			border-top: 7px solid $mainBgColor;
+		&+.box-mark {
+			//border-top: 7px solid $mainBgColor;
 		}
 
 		span {
@@ -39,25 +38,26 @@
 	}
 
 	&__title-sub {
-		font-size: clamp(1.063rem, 0.92rem + 0.71vw, 1.375rem);
-		padding: 8px 0 0;
+		font-size: clamp(1.063rem, 0.974rem + 0.44vw, 1.25rem);
+		padding: 5px 0 0;
 		font-weight: 300;
-		letter-spacing: 0.01em;
-		font-family: $font;
+		letter-spacing: .02em;
+		font-family: Roboto Slab, sans-serif;
+		display: block;
 	}
 
 	&__img-box {
-		margin: 0 0 0 -99999px;
-		display: flex;
-		justify-content: flex-end;
+
 
 		@include res(m) {
-			margin: 0;
+			margin: 15px -20px -20px;
 		}
 
 		.section__img {
 			width: auto;
+			margin: 0 auto;
 		}
+
 	}
 
 	&__img {
@@ -65,9 +65,10 @@
 		height: auto;
 		display: block;
 		width: 100%;
+		border-radius: 8px;
 
 		&+* {
-			margin-top: 30px;
+			margin-top: 33px;
 
 			@include res(l) {
 				margin-top: 0;
@@ -76,10 +77,18 @@
 
 		@include res(l) {
 			margin-bottom: 25px;
+
+			.section__img+* {
+				margin-bottom: 0;
+			}
 		}
 
 		@include res(m) {
 			margin-bottom: 20px;
+
+			.section__img+* {
+				margin-bottom: 0;
+			}
 		}
 	}
 
@@ -103,15 +112,44 @@
 			margin: 0 0 calc(12px + 1vw);
 		}
 	}
-	
+
 }
 
-.section--bottom-null {
-	padding-bottom: 0;
+.roads {
+	margin: 0;
+	position: absolute;
+
+	width: auto;
+
+
+	&--1 {
+		top: 12%;
+		left: -70%;
+	}
+
+	&--2 {
+		top: -8%;
+		right: -20%;
+	}
+
+	&--3 {
+		bottom: -51.5%;
+		right: -91%;
+	}
 }
 
-@include res(m) {
-	.section--1 {
+.section--1 {
+	padding: 80px 0 73px;
+
+	@include res(l) {
+		padding: 40px 0;
+	}
+
+	@include res(xs) {
+		padding: 30px 0 20px;
+	}
+
+	@include res(m) {
 		.section-content>[class*="grid"] {
 			&:first-child {
 				order: 2;
@@ -122,10 +160,23 @@
 			}
 		}
 	}
+
+	.section__title {
+		margin: -16px 0 16px;
+	}
+
+}
+
+.section--bottom-null {
+	padding-bottom: 50px;
+
+	@include res(m) {
+		padding-bottom: 0;
+	}
 }
 
 .section--white {
-	background: #fff;
+	//background: #fff;
 
 	&:last-child {
 		margin-bottom: 80px;
@@ -133,7 +184,7 @@
 		@include res(l) {
 			margin-bottom: 30px;
 		}
-	
+
 		@include res(xs) {
 			margin-bottom: 20px;
 		}

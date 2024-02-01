@@ -52,7 +52,7 @@ function sliderArrow() {
     if (portfolioSlider.length) {
         portfolioSlider.forEach((element) => {
 
-            const twentyTwentyWrapper = element.querySelector('.posts__img');
+            const twentyTwentyWrapper = element.querySelector('.posts-img-wrapper');
             const arrowWrapper = element.querySelectorAll('.slider-arrow-wrapper');
             const arrowWrapperHeight = twentyTwentyWrapper.clientHeight;
 

@@ -9,25 +9,29 @@
 	<meta name="keywords" content="Anna Polotskaia">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Marcellus&family=Quicksand&display=swap&_v=8a2b1cb4fcaf81efeb1cd9d77f9bd7c2" rel="stylesheet">
-	<link href="./css/main.min.css?_v=8a2b1cb4fcaf81efeb1cd9d77f9bd7c2" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Marcellus&family=Quicksand&family=Roboto+Slab:wght@700&display=swap&_v=2168d73cf8d86778c061da9f783da480" rel="stylesheet"> 	<link href="./css/main.min.css?_v=2168d73cf8d86778c061da9f783da480" rel="stylesheet">
+	<link href="./css/main.min.css?_v=5983c355045c2e7cb63761eaee1d088b" rel="stylesheet">
 </head>
-<body>
+<body class="inner">
 	<div class="wrapper">
 		<header class="header" role="banner">
 			<div class="container">
-				<a href="./" title="Anna Polotskaia" class="header__logo-link">
-					<picture><source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.jpg" class="header__logo" width="210" height="32" loading="auto" alt="Anna Polotskaia"></picture>
-				</a>
+            <a href="./" title="Anna Polotskaia" class="header__logo-link">
+               <img src="./img/logo.svg" class="header__logo" loading="auto" alt="Anna Polotskaia" width="183" height="56">
+            </a>
 				<nav class="main-nav-wrapper">
 					<ul class="main-nav__list">
-						<li class="main-nav__item main-nav__item--active"><a href="./about.html" class="main-nav__link">About</a></li>
+						<li class="main-nav__item"><a href="./about.html" class="main-nav__link">About</a></li>
 						<li class="main-nav__item"><a href="./services.html" class="main-nav__link">Services</a></li>
-						<li class="main-nav__item"><a href="./resources.html" class="main-nav__link">Resources</a></li>
+						<li class="main-nav__item main-nav__item--active"><a href="./resources.html" class="main-nav__link">Resources</a></li>
 					</ul>
 				</nav>
-				<a href="./contacts.html" class="button button--contact" title="Contact Dr. Anna" role="button" aria-label="Contact Dr. Anna">Contact Dr. Anna</a>
-				<span class="button btn-nav" role="button" aria-label="Open Navigation Menu"><figure></figure></span>
+				<a href="./contacts.html" class="button button--big button--contact" title="Contact Dr. Anna" role="button" aria-label="Contact Dr. Anna">
+					<img class="button__icon" src="./img/icon/message-icon-ac.svg" alt="img" width="24" height="24" />
+					<img class="button__icon button__icon--active" src="./img/icon/message-icon.svg" alt="img" width="24" height="24" />
+					Contact Dr. Anna
+				 </a>
+				 <span class="button btn-nav" role="button" aria-label="Open Navigation Menu"><figure></figure></span>
 			</div>
 		</header>
 		<main class="main">
@@ -35,24 +39,73 @@
 				<div class="container">
 					<div class="row section-content">
 						<div class="grid-6 grid-12_m">
-							<picture><source srcset="./img/img2.webp" type="image/webp"><img class="section__img" src="./img/img2.jpg" width="540" height="520" loading="auto" alt="img"></picture>
-							<div class="help-block">
-								<p>This is a part-time practice, your emails/voicemails will be returned within 48 hours.</p>
-								<p><strong>If you or your child is in crisis or in need of immediate assistance, below are a list of supports you can reach:</strong></p>
-								<ul>
-									<li><u>Here 24/7</u>: 1-844-437-3247 2</li>
-									<li><u>Closest Local Emergency Room</u></li>
-									<li><u>Mobile Crisis Unit Through Front Door</u> at 519-749-2932</li>
-								</ul>
-							</div>
+							<img class="section__img" src="./img/img10.webp" width="520" height="440" loading="auto" alt="img">
 						</div>
 						<div class="grid-6 grid-12_m">
-							<h1 class="h1 section__title">Resources<br>for Youth and Families</h1>
-							<ul>
-								<li>Self-regulation through co-regulation: <a href="" class="link">https://www.youtube.com/watch?v=RRMBHQ-Bmk0</a></li>
-								<li><a href="" class="link" title="CBT explained">CBT explained</a></li>
-								<li><a href="" class="link" title="Video">Video: progressive muscle relaxation</a></li>
-							</ul>	
+							<h1 class="h1 section__title">Resources for Youth<br> and Families</h1>
+							<p><strong>Does Psychotherapy work?</strong><br><a href="https://www.youtube.com/watch?v=J44e8gpA7fk">https://www.youtube.com/watch?v=J44e8gpA7fk</a></p>
+							<p><strong>Anxiety Canada (resources)</strong><br><a href="https://www.anxietycanada.com/">https://www.anxietycanada.com/</a></p>
+							<p><strong>Why Sleep is Important</strong><br><a href="https://www.youtube.com/watch?v=eaeIOvmjfVQ">https://www.youtube.com/watch?v=eaeIOvmjfVQ</a></p>
+							<p><strong>Self-regulation through co-regulation</strong><br><a href="https://www.youtube.com/watch?v=RRMBHQ-Bmk0">https://www.youtube.com/watch?v=RRMBHQ-Bmk0</a></p>
+							<p><strong>Progressive muscle relaxation</strong><br> Video: progressive muscle relaxation</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section s-services">
+				<div class="container">
+					<div class="section-head">
+						<h2 class="h2">Common Reasons to Look for Help</h2>
+						<p>There are many reasons to seek help from a psychologist, including, but not limited to: </p>
+					</div>
+					<div class="row services">
+						<div class="grid-3 grid-4_l grid-6_s">
+							<div class="services__item">
+								<img class="services__img" src="./img/icon/help-icon-1.svg" width="80" height="80" loading="lazy" alt="img">
+								<div class="services__text">You or others noticed that your child is feeling more tense, fearful, or anxious.</div>
+							</div>
+						</div>
+						<div class="grid-3 grid-4_l grid-6_s">
+							<div class="services__item">
+								<img class="services__img" src="./img/icon/help-icon-2.svg" width="80" height="80" loading="lazy" alt="img">
+								<div class="services__text">You and/or others noticed that your child lost interest in activities they used to enjoy.</div>
+							</div>
+						</div>
+						<div class="grid-3 grid-4_l grid-6_s">
+							<div class="services__item">
+								<img class="services__img" src="./img/icon/help-icon-3.svg" width="80" height="80" loading="lazy" alt="img">
+								<div class="services__text">Your child’s energy level, sleep, appetite, or mood are different.</div>
+							</div>
+						</div>
+						<div class="grid-3 grid-4_l grid-6_s">
+							<div class="services__item">
+								<img class="services__img" src="./img/icon/help-icon-4.svg" width="80" height="80" loading="lazy" alt="img">
+								<div class="services__text">You or others notice that your child is having a hard time keeping up with school work, sports, and activities.</div>
+							</div>
+						</div>
+						<div class="grid-3 grid-4_l grid-6_s">
+							<div class="services__item">
+								<img class="services__img" src="./img/icon/help-icon-5.svg" width="80" height="80" loading="lazy" alt="img">
+								<div class="services__text">You and/or others notice your child responding in extreme ways to day-to-day situations, making it hard for your child to participate in activities.</div>
+							</div>
+						</div>
+						<div class="grid-3 grid-4_l grid-6_s">
+							<div class="services__item">
+								<img class="services__img" src="./img/icon/help-icon-6.svg" width="80" height="80" loading="lazy" alt="img">
+								<div class="services__text">Your child is facing a difficult life situation, including death of a loved one, traumatic or stressful event, or a change in family composition.</div>
+							</div>
+						</div>
+						<div class="grid-3 grid-4_l grid-6_s">
+							<div class="services__item">
+								<img class="services__img" src="./img/icon/help-icon-7.svg" width="50" height="80" loading="lazy" alt="img">
+								<div class="services__text">Your child has difficulties facing new and/or challenging situations or avoids doing tasks that are effortful.</div>
+							</div>
+						</div>
+						<div class="grid-3 grid-4_l grid-6_s">
+							<div class="services__item">
+								<img class="services__img" src="./img/icon/help-icon-8.svg" width="80" height="80" loading="lazy" alt="img">
+								<div class="services__text">Your child appears to have a hard time making or keeping friends, or gets into frequent fights with peers.</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -61,15 +114,15 @@
 				<div class="container">
 					<div class="keep">
 						<div class="keep-inner">
-							<picture><source srcset="./img/icon1.webp" type="image/webp"><img class="keep__icon" src="./img/icon1.png" width="182" height="82" loading="lazy" alt="img"></picture>
-							<h2 class="h2 keep__title">Please Keep in Mind</h2>
-							<p class="keep__sub-title">My part-time clinic offers virtual and in-person appointments. I also teach at the local university and consult at the school board.</p>
-							<p><strong>Reach out via email or book a free 15-minute phone check to connect with Dr. Anna Polotskaia for you and your child's needs.</strong></p>
-							<div class="row-btn row--center">
-								<a href="" class="button button--big" title="Contact Me" role="button">Contact Me</a>
-								<div class="row-btn__text">or</div>
-								<a href="" class="button button--big" title="Schedule a Visit" role="button">Schedule a Visit</a>
-							</div>
+							<h2 class="h2">Keep in View</h2>
+							<p>This is a part-time practice, your emails/voicemails will be returned within 48 hours.</p>
+							<p><strong>If you or your child is in crisis or in need of immediate assistance, below are a list of supports you can reach:</strong></p>
+							<ul class="item-center">
+								<li>Here 24/7: <a href="tel:1-844-437-3247">1-844-437-3247</a></li>
+								<li><a href="">Closest Local Emergency Room</a></li>
+								<li>Mobile Crisis Unit Through Front Door at <a href="tel:519-749-2932">519-749-2932</a></li>
+								<li><a href="">Canadian Mental Association</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -77,11 +130,11 @@
 		</main>
 		<footer class="footer" role="contentinfo">
 			<div class="container">
-				Copyright &copy; 2023 - Dr. Anna Anna Polotskaia. All Rights Reserved.
+				Copyright &copy; 2024 - Dr. Anna Anna Polotskaia. All Rights Reserved.
 			</div>
 		</footer>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=8a2b1cb4fcaf81efeb1cd9d77f9bd7c2"></script>
-	<script src="js/main.js?_v=8a2b1cb4fcaf81efeb1cd9d77f9bd7c2" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=5983c355045c2e7cb63761eaee1d088b"></script>
+	<script src="js/main.js?_v=5983c355045c2e7cb63761eaee1d088b" type="text/javascript"></script>
 </body>
 </html>

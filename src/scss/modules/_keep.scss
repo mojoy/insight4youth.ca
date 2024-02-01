@@ -1,17 +1,18 @@
 .keep-inner {
-	max-width: 580px;
+	max-width: 620px;
 	margin: 0 auto;
 }
 
 .keep {
 	padding: 48px 50px 15px;
-	background: #fff;
+	background: rgba(254, 253, 252, 0.60);
 	text-align: center;
-	color: $mainColor;
-	font-size: clamp(0.938rem, 0.909rem + 0.14vw, 1rem);
+	//color: $mainColor;
+	font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
 	font-style: normal;
 	letter-spacing: 0.32px;
-	border-radius: 4px;
+	border-radius: 8px;
+	backdrop-filter: blur(8px);
 
 	@include res(m) {
 		padding: 20px;
@@ -31,6 +32,7 @@
 	&__title {
 		text-align: center;
 		margin: 0 0 16px;
+		color: $mainColor;
 	}
 
 	&__sub-title {
@@ -45,6 +47,10 @@
 	}
 
 	p {
-		margin-bottom: 23px;
+		margin-bottom: 24px;
+
+		@include res(m) {
+			margin-bottom: 16px;
+		}
 	}
 }

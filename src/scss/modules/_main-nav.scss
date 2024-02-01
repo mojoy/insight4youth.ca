@@ -15,7 +15,7 @@
 }
 
 .main-nav__list {
-	font-size: 18px;
+	font-size: 16px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
@@ -27,43 +27,49 @@
 	align-items: center;
 }
 
-.main-nav__item {
+.main-nav__item,
+.menu-item {
 	padding: 0 20px;
 	height: 100%;
 	display: flex;
 	align-items: center;
 
-	@include res(l) {
+	@include res(m) {
 		padding: 0 15px;
+		margin: 0 0 15px;
 	}
 }
 
-.main-nav__link {
-	color: $mainColor;
+.main-nav__link,
+.menu-item a {
 	text-decoration: none;
 	position: relative;
 	height: 100%;
 	align-content: center;
 	display: flex;
 	align-items: center;
+	color: #4A5777;
+	font-weight: 700;
 
 	&:before {
 		content: "";
 		position: absolute;
-		bottom: 0;
-		left: -5px;
+		bottom: -11px;
+		width: 0;
 		height: 6px;
-		right: -5px;
 		background: $mainColor;
 		opacity: 0;
 		transition: all 0.3s ease-in;
 	}
 }
 
+.active a,
+.menu-item a:hover,
 .main-nav__item--active .main-nav__link,
 .main-nav__link:hover {
 	&::before {
 		opacity: 1;
+		width: 100%;
 	}
 }
 
@@ -87,16 +93,14 @@
 		margin: 0 0 0 16px;
 	}
 
-	&:hover {
-		background: none;
-	}
+
 
 	figure {
 		position: relative;
 		z-index: 2;
 		width: 30px;
 		height: 2px;
-		background: $mainColor;
+		background: #F3FEFD;
 
 		@include res(xs) {
 			width: 22px;
@@ -107,7 +111,7 @@
 			content: '';
 			width: 30px;
 			height: 2px;
-			background: $mainColor;
+			background: #F3FEFD;
 			position: absolute;
 			transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 			left: 0;
@@ -119,11 +123,26 @@
 
 		&:before {
 			transform: rotate(0) translate3d(0, -8px, 0);
+			background: #F3FEFD;
 		}
 
 		&:after {
 			transform: rotate(0) translate3d(0, 8px, 0);
 		}
+	}
+
+	& {
+
+		figure:after,
+		figure:before {
+			background: #fff;
+		}
+	}
+
+	&:hover figure,
+	&:hover figure:after,
+	&:hover figure:before {
+		background: $mainColor;
 	}
 
 	&--open {
@@ -138,6 +157,10 @@
 			&:after {
 				transform: rotate(45deg) translate3d(0, 0, 0) scaleX(0.7);
 			}
+		}
+
+		&:hover figure {
+			background: transparent;
 		}
 	}
 }
