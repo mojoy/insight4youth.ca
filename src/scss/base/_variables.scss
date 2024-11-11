@@ -1,5 +1,5 @@
 $breakpoints: (
-	//'xxl': (max-width: 1680px),
+	'xxl': (max-width: 1680px),
 	//'xl': (max-width: 1400px),
 	//'xll': (max-width: 1280px),
 	'l': (max-width: 1024px),
@@ -13,11 +13,9 @@ $font: 'Manrope', sans-serif;
 $fontH1: 'Roboto Slab', serif;
 $fontForm: 'Quicksand', sans-serif;
 
-$mainFontSize: clamp(1rem, 0.934rem + 0.25vw, 1.125rem);
+$container_width: 1174px;
 
-$container_width: 1176px;
-
-$gutter: 16px;
+$gutter: 24px;
 
 $shadow-block: 0 2px 15px 0 transparentize(#a6bfcf, 0.5);
 $shadow-block-big: 0 3px 35px 0 transparentize(#a6bfcf, 0.3);

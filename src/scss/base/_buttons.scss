@@ -12,6 +12,8 @@
 
 	&--lines {
 		overflow: hidden;
+		margin-left: -28px;
+		margin-right: -28px;
 
 		.button {
 			&:after {
@@ -59,14 +61,8 @@
 	font-weight: 500;
 
 	@include res(m) {
-		padding: 0 20px;
+		padding: 8px 20px;
 	}
-
-	@include res(xs) {
-		padding: 0 13px;
-	}
-
-
 }
 
 .row-more {
@@ -84,7 +80,6 @@
 .more {
 	&__link {
 		color: #00988f;
-		text-decoration: none;
 		display: flex;
 		align-items: center;
 		line-height: 1.4;
@@ -130,7 +125,6 @@
 }
 
 .button {
-	display: inline-block;
 	position: relative;
 	text-decoration: none;
 	white-space: nowrap;
@@ -196,16 +190,16 @@
 
 	&--big {
 		font-size: 16px;
-		padding: 16px 24px;
+		padding: 17px 24px;
 		line-height: 1.25;
 
 		@include res(m) {
-			font-size: 15px;
-			padding: 10px 20px;
+			//font-size: 15px;
+			//padding: 10px 20px;
 		}
 
 		@include res(xs) {
-			padding: 10px 15px;
+			//padding: 10px 15px;
 		}
 
 
@@ -244,10 +238,6 @@ button::-moz-focus-inner {
 .button__icon {
 
 	margin: 0 8px 0 0;
-
-	@include res(xs) {
-		width: 19px;
-	}
 
 	.button:hover &,
 	.button:active & {

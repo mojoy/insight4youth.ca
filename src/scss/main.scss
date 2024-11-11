@@ -38,8 +38,15 @@ Version: 1.0
    display: none;
 }
 
-.web {
+.mob {
+   display: none;
 
+   @include res(m) {
+      display: block;
+   }
+}
+
+.web {
 
    @include res(m) {
       display: none;
@@ -47,3 +54,13 @@ Version: 1.0
 }
 
 .keep-inner ul{display:flex;flex-wrap:nowrap;flex-direction:column;align-items:center}
+.map-wrapper {
+   border-radius: 4px;
+   overflow: hidden;
+   position: relative;
+}
+.section__dr-img {
+   border-radius: 8px;
+   overflow: hidden;
+   position: relative;
+}

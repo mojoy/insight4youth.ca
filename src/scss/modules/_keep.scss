@@ -27,6 +27,7 @@
 		margin: 0 auto 15px;
 		display: block;
 		width: auto;
+		max-width: 270px;
 	}
 
 	&__title {
@@ -49,8 +50,8 @@
 	p {
 		margin-bottom: 24px;
 
-		@include res(m) {
-			margin-bottom: 16px;
+		@include res(xxl) {
+			margin-bottom: calc(16px + (24 - 16) * ((100vw - 360px) / (1680 - 360)));
 		}
 	}
 }

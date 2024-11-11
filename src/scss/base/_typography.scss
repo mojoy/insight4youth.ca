@@ -1,6 +1,6 @@
 body {
 	font-family: $font;
-	font-size: $mainFontSize;
+	font-size: 18px;
 	font-weight: 400;
 	font-style: normal;
 	line-height: 1.55;
@@ -8,48 +8,66 @@ body {
 	background: $mainBgColor;
 	letter-spacing: 0.031em;
 	min-width: 320px;
-	background: #F9F5F1;
+	background: #F8F4F1;
 
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 
+	@include res(xxl) {
+		line-height: 1.625;
+		font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (1680 - 375)));
+	}
+
 	&.over {
 		overflow: hidden;
 	}
 
-	background: #F9F5F1 url(../img/bg-inner.webp) no-repeat 50% 100%;
+	.main {
+		position: relative;
+		overflow: hidden;
 
-	@media (min-width: 1921px) {
-		background-size: cover;
-	}
+		&-bg {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			pointer-events: none;
+			left: 0;
+			bottom: 0;
+			right: 0;
 
-	@include res(l) {
-		background-size: 768px auto;
-	}
+			@include res(xxl) {
+				margin-right: calc(-200px + (0 - -200) * ((100vw - 768px) / (1680 - 768)));
+				margin-left: calc(-250px + (0 - -250) * ((100vw - 768px) / (1680 - 768)));
+			}
 
-	@include res(m) {
-		background-size: 670px auto;
-		line-height: 1.625;
-	}
+			@include res(m) {
+				margin-right: 0;
+				margin-left: 0;
+				margin-bottom: calc(0px + (-335 - 0) * ((100vw - 360px) / (768 - 360)));
+			}
+		}
 
-	@include res(xs) {
-		background-size: 590px auto;
+		&-bg__img {
+			width: 100%;
+			max-width: 1920px;
+			margin: 0 auto;
+		}
 	}
 
 	&.home {
-		background: #f9f5f1 url(../img/bg-home.webp) no-repeat 50% 0;
+		background: #F8F4F1 url(../img/bg-home.webp) no-repeat 50% 0;
+
 
 		@include res(m) {
-			background: #F9F5F1 url(../img/bg-inner.webp) no-repeat 50% 100%;
-			background-size: 768px auto;
+			background: #F8F4F1;
 		}
-
-		@include res(xs) {
-			background-size: 590px auto;
-		}
-
 	}
+
+
+
+
+
 }
 
 .wrapper {
@@ -81,7 +99,7 @@ h6,
 
 h1,
 .h1 {
-	font-size: clamp(1.75rem, 1.355rem + 1.53vw, 2.5rem);
+	font-size: 40px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
@@ -89,6 +107,11 @@ h1,
 	font-family: $fontH1;
 	margin: 0 0 13px;
 	color: #4A5777;
+
+	@include res(xxl) {
+		font-size: calc(28px + (40 - 28) * ((100vw - 360px) / (1680 - 360)));
+	}
+
 
 	@include res(m) {
 		line-height: 1.12;
@@ -100,12 +123,17 @@ h2,
 .h2 {
 	color: $titleColor;
 	font-family: $font;
-	font-size: clamp(1.375rem, 1.046rem + 1.27vw, 2rem);
+	font-size: 32px;
 	font-style: normal;
 	font-weight: 800;
 	line-height: 1.25;
 	letter-spacing: 0;
 	margin: 0 0 16px;
+
+	@include res(xxl) {
+		font-size: calc(22px + (32 - 22) * ((100vw - 360px) / (1680 - 360)));
+		margin: 0 0 10px;
+	}
 
 	@include res(m) {
 		line-height: 1.2;
@@ -115,20 +143,22 @@ h2,
 
 h3,
 .h3 {
-	font-size: clamp(1.375rem, 1.205rem + 0.85vw, 1.75rem);
+	font-size: 28px;
 	line-height: 1.2;
+
+	@include res(xxl) {
+		font-size: calc(20px + (28 - 20) * ((100vw - 360px) / (1680 - 360)));
+	}
 }
 
 h4,
 .h4 {
-	font-size: clamp(1rem, 0.886rem + 0.57vw, 1.25rem);
+	font-size: 26px;
 	line-height: 1.3;
-}
 
-h5,
-.h5 {
-	font-size: clamp(1rem, 0.943rem + 0.28vw, 1.125rem);
-	line-height: 1.3;
+	@include res(xxl) {
+		font-size: calc(18px + (26 - 18) * ((100vw - 360px) / (1680 - 360)));
+	}
 }
 
 a {

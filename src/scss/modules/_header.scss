@@ -7,14 +7,8 @@
 	z-index: 5;
 	border-bottom: 2px solid #EEE3D9;
 
-	@include res(m) {
-		padding: 8px 0;
-	}
-
 	&.fixed {
 		box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
-
-
 	}
 
 	.container {
@@ -22,15 +16,6 @@
 		justify-content: space-between;
 		align-items: center;
 		max-width: 1437px;
-	}
-}
-
-.header__logo-link {
-
-
-	@media (max-width: 414px) {
-		overflow: hidden;
-		width: 45px
 	}
 }
 
@@ -47,5 +32,49 @@
 
 	@include res(xs) {
 		max-width: 155px;
+	}
+}
+
+.mob-panel {
+	position: fixed;
+	inset: 0;
+	z-index: 2;
+	background: url(https://insight4youth.ca/wp-content/themes/insight4youth2.0/img/bg-inner.webp);
+	display: flex;
+	justify-content: center;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity .5s ease;
+	background-size: 800px auto;
+	background-position: 52% 78%;
+
+	&.open {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+	}
+
+	&__content {
+		align-self: center;
+		display: flex;
+		flex-direction: column;
+		padding: 0 0 58px;
+	}
+
+	.main-nav__list {
+		flex-direction: column;
+		gap: 41px;
+		margin: 0 0 65px;
+		font-size: calc(18px + (24 - 18) * ((100vw - 360px) / (768 - 360)));
+
+		.menu-item {
+			padding: 0 15px;
+			margin: 0;
+		}
+	}
+
+	.button--contact {
+		display: flex;
 	}
 }

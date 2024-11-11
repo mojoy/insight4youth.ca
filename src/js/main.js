@@ -14,35 +14,47 @@ function initSwiper() {
     const windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
     if (windowWidth < 1024) {
-        swiper = new Swiper(".swiper-posts", {
+        swiper = new Swiper(".swiper-services", {
             slidesPerView: 3,
             loop: true,
             threshold: 5,
             grabCursor: true,
             watchOverflow: true,
-            autoHeight: true,
             spaceBetween: 30,
+            //autoHeight: true,
 
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-services-button--next",
+                prevEl: ".swiper-services-button--prev",
             },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                //dynamicBullets: true,
+            },
+
+            centeredSlides: true, // центрируем слайд
 
             breakpoints: {
                 250: {
-                    slidesPerView: 1,
-                    spaceBetween: 0
+                    slidesPerView: 1.3,
+                    spaceBetween: 24,
+                    centeredSlides: true,
                 },
                 640: {
-                    slidesPerView: 2,
-                    spaceBetween: 16
+                    slidesPerView: 2.3,
+                    spaceBetween: 24,
+                    centeredSlides: false
                 },
                 930: {
-                    slidesPerView: 3,
-                    spaceBetween: 24
+                    slidesPerView: 3.3,
+                    spaceBetween: 24,
+                    centeredSlides: false
                 },
             }
         });
+
     }
 }
 
@@ -85,7 +97,7 @@ if (btnNav) {
     btnNav.addEventListener("click", function () {
 
         const body = document.querySelector('body');
-        const nav = document.querySelector('.main-nav-wrapper');
+        const nav = document.querySelector('.mob-panel');
 
         if (btnNav.classList.contains('btn-nav--open')) {
             btnNav.classList.remove('btn-nav--open');

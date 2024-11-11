@@ -3,7 +3,14 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="429bb4de-0361-455c-80ac-bc78d02e96b3" name="http://insight4youth.ca/" url="http://insight4youth.ca">
-        <fileTransfer rootFolder="/wp-content/themes/insight4youth" host="insight4youth.ca" port="21">
+        <fileTransfer rootFolder="/wp-content/themes/insight4youth2.0" host="insight4youth.ca" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="1a9ed953-bf06-4fee-aebc-fd5a8398bd0d" name="php" url="http://insight4youth.ca">
+        <fileTransfer rootFolder="/wp-content/themes/insight4youth2.0" host="insight4youth.ca" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

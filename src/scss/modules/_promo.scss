@@ -1,11 +1,12 @@
 .promo {
-	font-size: clamp(1.063rem, 0.92rem + 0.71vw, 1.375rem);
+	font-size: 22px;
 	line-height: 1.65;
 	letter-spacing: 0.03em;
 	min-height: 691px;
+	padding: 0 !important;
 
-	@media (min-width: 1024px) {
-		padding: 0;
+	@include res(xxl) {
+		font-size: calc(18px + (22 - 18) * ((100vw - 360px) / (1680 - 360)));
 	}
 
 	@include res(m) {
@@ -28,10 +29,7 @@
 		}
 	}
 
-.section-content {
-	min-height: 480px;
+	.section-content {
+		min-height: 480px;
+	}
 }
-	
-
-}
-

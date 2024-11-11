@@ -3,21 +3,23 @@
 	color: $colorFooter;
 	font-size: 12px;
 	font-weight: 500;
-	line-height: 1.3;
+
+	br {
+		display: none;
+
+		@include res(m) {
+			display: block;
+		}
+	}
 
 	.container {
 		padding-top: 33px;
 		padding-bottom: 33px;
 		text-align: center;
 
-		@include res(m) {
-			padding-top: 24px;
-			padding-bottom: 24px;
-		}
-
-		@include res(xs) {
-			padding-top: 16px;
-			padding-bottom: 16px;
+		@include res(l) {
+			padding-top: calc(18px + (33 - 18) * ((100vw - 360px) / (1024 - 360)));
+			padding-bottom: calc(21px + (33 - 21) * ((100vw - 360px) / (1024 - 360)));
 		}
 	}
 }

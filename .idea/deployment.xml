@@ -5,6 +5,13 @@
       <paths name="http://insight4youth.ca/">
         <serverdata>
           <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/dist" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="php">
+        <serverdata>
+          <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$/theme" web="/" />
           </mappings>
         </serverdata>

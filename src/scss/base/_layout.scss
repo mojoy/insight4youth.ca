@@ -6,22 +6,14 @@
 	flex-grow: 1;
 
 	@include res(l) {
-		padding: 0 0 300px;
-	}
-
-	@include res(m) {
-		padding: 0 0 200px;
-	}
-
-	@include res(xs) {
-		padding: 0 0 140px;
+		padding: 0 0 405px;
 	}
 
 	.home & {
 		padding: 0 0 46px;
 
 		@include res(m) {
-			padding: 0 0 200px;
+			padding: 0 0 79px;
 		}
 	}
 }
