@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fcf648cf-ad9f-493f-b3e1-2040cd6123c9" name="insight4youth@insight4youth.ca" url="http://insight4youth.ca">
+        <fileTransfer rootFolder="/wp-content/themes/insight4youth" host="insight4youth.ca" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
